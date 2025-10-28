@@ -29,28 +29,23 @@ Redirect 301 /FAIR-course-UT/2025/group1/ontology https://github.com/araratkhach
 
 # processing directory
 
-Redirect 301 /FAIR-course-UT/2025/group1/processing
-https://github.com/araratkhachadurian/fair-course-ut-2025-group-1/tree/develop/processing
+Redirect 301 /FAIR-course-UT/2025/group1/processing https://github.com/araratkhachadurian/fair-course-ut-2025-group-1/tree/develop/processing
 
 # shapes directory
 
-Redirect 301 /FAIR-course-UT/2025/group1/shapes
-https://github.com/araratkhachadurian/fair-course-ut-2025-group-1/tree/develop/shapes
+Redirect 301 /FAIR-course-UT/2025/group1/shapes https://github.com/araratkhachadurian/fair-course-ut-2025-group-1/tree/develop/shapes
 
 # ontology (owx)
 
-Redirect 301 /FAIR-course-UT/2025/group1/ontology/ontology
-https://raw.githubusercontent.com/araratkhachadurian/fair-course-ut-2025-group-1/refs/heads/develop/ontology/ontology.owx
+Redirect 301 /FAIR-course-UT/2025/group1/ontology/ontology https://raw.githubusercontent.com/araratkhachadurian/fair-course-ut-2025-group-1/refs/heads/develop/ontology/ontology.owx
 
 # source distribution (csv)
 
-Redirect 301 /FAIR-course-UT/2025/group1/data/source_distribution
-https://raw.githubusercontent.com/araratkhachadurian/fair-course-ut-2025-group-1/refs/heads/develop/data/pokemonDB_dataset.csv
+Redirect 301 /FAIR-course-UT/2025/group1/data/source_distribution https://raw.githubusercontent.com/araratkhachadurian/fair-course-ut-2025-group-1/refs/heads/develop/data/pokemonDB_dataset.csv
 
 # fairified distribution (turtle)
 
-Redirect 301 /FAIR-course-UT/2025/group1/data/fair_distribution
-https://raw.githubusercontent.com/araratkhachadurian/fair-course-ut-2025-group-1/refs/heads/develop/data/data.ttl
+Redirect 301 /FAIR-course-UT/2025/group1/data/fair_distribution https://raw.githubusercontent.com/araratkhachadurian/fair-course-ut-2025-group-1/refs/heads/develop/data/data.ttl
 
 # shapes (turtle)
 
@@ -139,8 +134,8 @@ Redirect 301 /FAIR-course-UT/2025-2026/group10/data https://raw.githubuserconten
 # Original CSV data
 Redirect 301 /FAIR-course-UT/2025-2026/group10/originalData https://raw.githubusercontent.com/vgosa/FAIR-2025-Group10/main/data/fitness-tracker-subset.csv
 
-# Metadata
-Redirect 301 /FAIR-course-UT/2025-2026/group10/metadata https://raw.githubusercontent.com/vgosa/FAIR-2025-Group10/main/metadata/metadata.ttl
+# Metadata Folder
+Redirect 301 /FAIR-course-UT/2025-2026/group10/metadata https://github.com/vgosa/FAIR-2025-Group10/tree/main/metadata
 
 # GROUP 11
 RewriteRule ^FAIR-course-UT/2025-2026/group11/ont(.*)$ https://raw.githubusercontent.com/xiongxiaoyan07/FAIR-2025-2026-group11-raw/refs/heads/main/ontology/ont.ttl$1 [R=301,L]
@@ -184,10 +179,10 @@ Redirect 301 /FAIR-course-UT/2025/16/fairified_data https://raw.githubuserconten
 # shapes 
 Redirect 301 /FAIR-course-UT/2025/16/shapes https://raw.githubusercontent.com/ricepape/FAIR-Data-Engineering-project/refs/heads/main/Shapes/Amazon_shacl.ttl
 
-Group 19
+#Group 19
 RewriteRule ^FAIR-course-UT/2025/group19/FAIR_project/?(.*)$ https://github.com/patriciaferreiradasilva/FAIR_petrokgraph/tree/main/$1 [R=302,R]
 
-Group 23
+#Group 23
 
 Redirect 301 /FAIR-course-UT/2025-2026/group23 https://github.com/just4THEsmile/FAIR/tree/master
 
@@ -207,6 +202,6 @@ Redirect 301 /FAIR-course-UT/2025-2026/group23/ont https://github.com/just4THEsm
 
 Redirect 301 /FAIR-course-UT/2025-2026/group23/metadata https://github.com/just4THEsmile/FAIR/tree/master/metadata
 
-Group X
+#Group X
 
-RedirectRule ^/202502026/groupx/ontology#?(.*) https://raw.githubusercontent.com/FAIRDataTeam/FDP-O/v1.1/fdp-ontology.owl [R=307,L]
+RewriteRule ^/202502026/groupx/ontology#?(.*) https://raw.githubusercontent.com/FAIRDataTeam/FDP-O/v1.1/fdp-ontology.owl [R=307,L]
